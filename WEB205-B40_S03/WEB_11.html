@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI Store</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .logo img {
+            width: 40px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .logo img:hover {
+            transform: scale(1.2);
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin-right: 30px;
+            color: #333;
+            cursor: pointer;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar ul li:hover {
+            color: #ff6700;
+            transform: scale(1.1);
+        }
+
+        .navbar-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-icons img {
+            width: 30px;
+            margin-left: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        .banner{
+            width:90%;
+            margin: 0 auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner img{
+            max-width:100%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin: 20px 0;
+        }
+
+        .products-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            width: 180px;
+            padding: 15px;
+            margin: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card img {
+            width: 100px;
+            height: auto;
+        }
+
+        .product-card h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .product-card .price {
+            font-size: 16px;
+            color: #ff6700;
+            margin: 10px 0;
+        }
+
+        .product-card .old-price {
+            text-decoration: line-through;
+            color: grey;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Section Styling for Offers */
+        .offer-section {
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 30px 0;
+        }
+
+        .offer-section h2 {
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://seeklogo.com/images/M/mi-store-logo-51D3C04D50-seeklogo.com.png" alt="MI Store Logo"/>
+        </div>
+        <ul class="nav-specifications">
+            <li>Store</li>
+            <li>Phones</li>
+            <li>Tablets</li>
+            <li>TV & Smart Home</li>
+            <li>Smart Watch & Audio</li>
+            <li>Discover</li>
+            <li>Support</li>
+        </ul>
+        <div class="navbar-icons">
+            <img src="https://cdn-icons-png.flaticon.com/128/61/61088.png" alt="Search Icon"/>
+            <img src="https://cdn-icons-png.flaticon.com/128/60/60992.png" alt="Cart Icon"/>
+            <img src="https://cdn-icons-png.flaticon.com/128/61/61205.png" alt="Profile Icon"/>
+        </div>
+    </nav>
+
+
+    <!-- "For the Love of Music" Section -->
+    <div class="offer-section">
+        <div class="banner">
+            <img src="https://i03.appmifile.com/498_operator_in/16/09/2024/2753de76d372b97bbd60f465aab334a4.jpg?thumb=1&w=1680&f=webp&q=85"/>
+        </div>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://path-to-earbuds-image.com" alt="Redmi Buds 5">
+                <h3>Redmi Buds 5</h3>
+                <div class="price">₹2,299 <span class="old-price">₹4,999</span></div>
+            </div>
+            <div class="product-card">
+                <img src="https://path-to-earphone-image.com" alt="Mi Dual Driver Earphones">
+                <h3>Mi Dual Driver Earphones</h3>
+                <div class="price">₹799 <span class="old-price">₹999</span></div>
+            </div>
+            <div class="product-card">
+                <img src="https://path-to-wireless-earphones-image.com" alt="Redmi Sonic Bass Earphones">
+                <h3>Redmi Sonic Bass Earphones</h3>
+                <div class="price">₹1,299 <span class="old-price">₹2,999</span></div>
+            </div>
+            <div class="product-card">
+                <img src="https://path-to-speaker-image.com" alt="Mi Portable Bluetooth Speaker">
+                <h3>Mi Portable Bluetooth Speaker (16W)</h3>
+                <div class="price">₹1,999 <span class="old-price">₹3,499</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- "Save Up to 65% on Chargers & Cables" Section -->
+    <div class="offer-section">
+        <h2>SAVE UP TO 65% ON CHARGERS & CABLES</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://path-to-charger-image.com" alt="Mi 67W SonicCharge">
+                <h3>Mi 67W SonicCharge</h3>
+                <div class="price">₹1,699 <span class="old-price">₹2,999</span></div>
+            </div>
+            <div class="product-card">
+                <img src="https://path-to-cable-image.com" alt="Mi 2A Fast Charger">
+                <h3>Mi 2A Fast Charger</h3>
+                <div class="price">₹429 <span class="old-price">₹599</span></div>
+            </div>
+            <div class="product-card">
+                <img src="https://path-to-cable-image.com" alt="Xiaomi SonicCharge 2.0 Cable">
+                <h3>Xiaomi SonicCharge 2.0 Cable</h3>
+                <div class="price">₹199 <span class="old-price">₹699</span></div>
+            </div>
+            <div class="product-card">
+                <img src="https://path-to-charger-image.com" alt="Mi Wireless Charger">
+                <h3>Mi Wireless Charger</h3>
+                <div class="price">₹899 <span class="old-price">₹1,499</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
