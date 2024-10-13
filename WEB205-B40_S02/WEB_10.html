@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Switch</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: white;
+            
+        }
+
+        .logo img{
+            height: 30px;
+            padding-right: 400px;
+        }
+
+        .nav-specifications{
+            list-style-type:none;
+            display: flex;
+            gap:20px;
+
+        }
+
+        .login-button{
+            background-color: #B1FB3F;
+            border:none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .login-button:hover {
+            background-color: #9ED733;
+        }
+
+        .hero{
+            background: linear-gradient(to top,white, #c7daf9);
+            padding:10px;
+            position:relative;
+            text-align: center;
+            height: 100vh;
+            border-top-right-radius: 30px; 
+            border-top-left-radius: 30px;
+        }
+
+        .grid-background{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(200, 220, 255, 0.1);
+            display: grid;
+            grid-template-columns: repeat(10,1fr);
+            grid-template-rows: repeat(5,1fr);
+            gap:2px;
+            z-index: 0;
+        }
+
+        .grid-background div{
+            background-color: rgba(255, 255, 255, 0.649);
+            transition: background-color 0.2s ease;
+        }
+
+        .grid-background div:hover{
+            background-color: rgba(199, 206, 230, 0.8);
+        }
+
+        .content{
+            position: relative;
+            z-index: 1;
+            text-align: left;
+            color: #2d2828;
+            padding-left: 100px;
+            
+        }
+
+        .ventures-logo{
+            height: 35px;
+            margin-bottom: 50px;
+        }
+
+        .hero h1{
+            font-size:48px;
+            font-weight:bold;
+            color: rgb(80, 79, 79);
+        }
+
+        .hero h1 span{
+            color:#3671E9;
+            font-weight: 600;
+            
+        }
+
+        .hero p{
+            font-size:18px;
+            color:rgb(120, 117, 117);
+            margin-top:20px;
+        }
+
+        .apply-button {
+            margin-top: 30px;
+            background-color: black;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .apply-button:hover {
+            background-color: #444;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://coinswitch.co/_next/static/media/logo.01525825.svg" alt="CoinSwitch"/>
+        </div>
+        <ul class="nav-specifications">
+            <li>Products</li>
+            <li>Coins</li>
+            <li>Ventures</li>
+            <li>Blog</li>
+            <li>Company</li>
+        </ul>
+        <button class="login-button">Login To Pro</button>
+    </nav>
+    <section class="hero">
+        <div class="grid-background">
+            <script>
+                const grid = document.querySelector('.grid-background');
+                for (let i = 0; i < 60; i++) {
+                    let div = document.createElement('div');
+                    grid.appendChild(div);
+                }
+            </script>
+        </div>
+        <div class="content">
+            <img src="https://coinswitch.co/_next/static/media/logo.01525825.svg" alt="CoinSwitch" class="ventures-logo" />
+            <h1>Your Innovation<br><span>Our Fuel</span></h1>
+            <p>CoinSwitch Ventures invests in the most promising Web3 and
+                <br> blockchain projects in India. Does that sound like you?</p>
+            <button class="apply-button">Apply Now</button>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: radial-gradient(#9ef7ff, #ed404f);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .container {
+            padding: 10px;
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 450px;
+            
+        }
+
+        .feedback-form {
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            box-sizing: border-box;
+            height:100%;
+            
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom:15px;
+            color: rgb(3, 0, 0);
+        }
+
+        label {
+            display: block;
+            margin: 5px 0 2px;
+            color: black;
+            font-size:14px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="url"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 6px;
+            margin-bottom: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size:14px;
+        }
+
+        textarea{
+            height: 60px;
+            resize:none;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .rating label {
+            cursor: pointer;
+            padding: 5px 8px;
+            background-color: #ccc;
+            border-radius: 5px;
+            font-size:14px;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        input[type="radio"]:checked + label {
+            background-color: gold;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #71b2f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="feedback-form">
+            <h1>Feedback Form</h1>
+            <label for="feedback-type"><b>Feedback Type:</b></label>
+            <select id="feedback-type" name="feedback-type">
+                <option value="compliment">Compliment</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="issue">Issue</option>
+                <option value="issue">Other</option>
+            </select>
+
+            <label for="message"><b>Message:</b></label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label><b>Website Rating:</b></label>
+            <div class="rating">
+                <input type="radio" id="excellent" name="website-rating" value="excellent" required>
+                <label for="excellent">Excellent</label>
+                <input type="radio" id="good" name="website-rating" value="good">
+                <label for="good">Good</label>
+                <input type="radio" id="average" name="website-rating" value="average">
+                <label for="average">Average</label>
+                <input type="radio" id="poor" name="website-rating" value="poor">
+                <label for="poor">Poor</label>
+            </div>
+
+            <label for="age"><b>Age(10-100):</b></label>
+            <input type="text" id="age" name="age" required>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password"><b>Password:</b></label>
+            <input type="password" id="password" name="password" required minlength="8">
+
+            <label for="website-url"><b>Website URL (optional):</b></label>
+            <input type="url" id="website-url" name="website-url">
+
+            <label>
+                <input type="checkbox" name="terms" required> I agree to the terms and conditions
+            </label>
+
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build the panda card</title>
+
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, #d3ebf5, #cc99ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .container{
+            padding: 10px;
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .panda-card{
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            height: 650px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .circle{
+            /* border:2px solid black; */
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin: 20px auto;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .circle img{
+            width:100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1{
+            font-size: 24px;
+            margin: 10px 0;
+            text-align: left;
+            color: #6ca24a;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        h2{
+            font-size: 20px;
+            margin: 5px 0;
+            font-weight: normal;
+        }
+
+        .info{
+            font-size: 20px;
+            color: #696363;
+        }
+
+        .info strong {
+            display: block;
+            font-size: 22px;
+            color: #6ca24a;
+            margin: 10px 0;
+        }
+        
+    
+        .stars {
+            margin-top: 20px;
+        }
+
+        .stars i {
+            font-size: 24px;
+            color: goldenrod;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="panda-card">
+            <!-- <h1>Title</h1> -->
+            <h1>Panda Card</h1>
+            <div class="circle">
+                <img src="https://play-lh.googleusercontent.com/vPiM4kYEnXWHpeF8m9gxzHm5kDaKLjZ7ekgw_BMsLKJFzNTqD4xCnnbYhDk29TQviuo" alt="Cute Panda">
+            </div>
+            <div class="info">
+                <strong> John Doe</strong><br>
+                Computer Science 1<br>
+                Computer Science 2<br>
+                Year: 3
+            </div>
+            <div class="stars">
+                <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

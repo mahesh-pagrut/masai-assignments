@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Styling a Table</title>
+    <style>
+        body{
+            background-color: white;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+
+        }
+        table {
+            width:70%;
+            border-collapse: collapse;
+            text-align: center;
+            margin: 20px auto;
+        }
+        th, td{
+            border:1px solid black;
+            padding: 8px; 
+        }
+
+        th{
+            background-color: rgb(48, 227, 167);
+            color: white;
+        }
+
+        td{
+            background-color: rgba(205, 251, 237, 0.174) ;
+            text-align: left;
+        }
+
+        .total_row{
+            background-color: rgb(156, 156, 156);
+        }
+
+        .total_row {
+            text-align: right;
+            font-weight: bold;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th><b>Product Name </b></th>
+            <th><b>Quantity </b></th>
+            <th><b>Price Per Unit </b></th>
+            <th><b>Description </b></th>
+            <th><b>Total Price </b></th>
+        </tr>
+
+        <tr>
+            <td>Product 1 </td>
+            <td>2 </td>
+            <td>$10</td>
+            <td>This is product 1 </td>
+            <td><b>$20 </b> </td>
+        </tr>
+
+        <tr>
+            <td>Product 2 </td>
+            <td>3 </td>
+            <td>$20</td>
+            <td>This is product 2 </td>
+            <td><b>$60 </b> </td>
+        </tr>
+
+        <tr class="total_row">
+            <td colspan="4"><b>Sum </b></td>
+            <td ><b>$80 </b></td>
+        </tr>
+        
+
+    </table>
+</body>
+</html>
