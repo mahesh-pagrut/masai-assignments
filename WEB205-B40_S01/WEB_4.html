@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form HTML</title>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form action="/submit" method="POST">
+        <label for="feedback-type">Feedback Type - </label>
+        <select id="feedback-type" name="feedback-type">
+            <option value="general">General</option>
+            <option value="suggestion">Suggestion</option>
+            <option value="bugs">Bugs</option>
+            <option value="tech issue">Tech issue</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <label for="message">User Message - </label>
+        <textarea id="message" name="message" row="5" cols="55" placeholder="Enter your message/feedback here"></textarea>
+        <br>
+
+        <label>Website Rating - </label>
+        <input type="radio" id="rating1" name="rating" value="1">
+        <label for="rating1">1</label>
+        <input type="radio" id="rating2" name="rating" value="2">
+        <label for="rating1">2</label>
+        <input type="radio" id="rating3" name="rating" value="3">
+        <label for="rating1">3</label>
+        <input type="radio" id="rating4" name="rating" value="4">
+        <label for="rating1">4</label>
+        <input type="radio" id="rating5" name="rating" value="5">
+        <label for="rating1">5</label>
+        <br>
+        
+        <label for="email">Email - </label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+        <br><br>
+        <label for="password">Password - </label>
+        <input type="password" id="password" name="password" required placeholder="Enter your password" minlength="8">
+        <br><br>
+        <label for="wesite url">Website URL (optional) - </label>
+        <input type="url" id="website" name="website" required placeholder="Enter your website url">
+        <br><br>
+
+        <label for="terms">
+            <input type="checkbox" id="terms" name="terms" required>
+            I agree to the terms and conditions!
+        </label>
+        <br><br>
+
+        <input type="submit" value="submit">
+
+    </form>
+</body>
+</html>
